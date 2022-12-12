@@ -15,8 +15,8 @@ Patches: revanced-patches-2.142.0.jar
 
   
 **App Versions:**  
-YouTube: 17.45.36  
 Twitter: 9.65.7-release.0  
+YouTube: 17.45.36  
 Windy: 33.1.4  
 
 Install [Vanced Microg](https://github.com/inotia00/VancedMicroG/releases) to be able to use non-root YouTube or Music  
