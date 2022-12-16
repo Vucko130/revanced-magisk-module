@@ -1,17 +1,11 @@
-CLI: revanced-cli-2.17.0-all.jar  
+CLI: revanced-cli-2.18.1-all.jar  
 Integrations: app-release-unsigned-v0.84.0.apk  
 Patches: revanced-patches-2.144.0.jar  
 
-### [2.144.0](https://github.com/revanced/revanced-patches/compare/v2.143.0...v2.144.0) (2022-12-15)
-
-
+### [2.144.0](https://github.com/Vucko130/revanced-patches/compare/v2.143.0...v2.144.0) (2022-12-16)
 ### Features
-
-* **citra:** add compatibility for canary package ([#1256](https://github.com/revanced/revanced-patches/issues/1256)) ([42ec021](https://github.com/revanced/revanced-patches/commit/42ec0218d829ea15759f83562d24588ce97cb646))
-* link packages to Google PlayStore ([#1272](https://github.com/revanced/revanced-patches/issues/1272)) ([97892e0](https://github.com/revanced/revanced-patches/commit/97892e01044c74916375aeebcc094d3304e14f4e))
-
-
-
+* **citra:** add compatibility for canary package ([#1256](https://github.com/Vucko130/revanced-patches/issues/1256)) ([42ec021](https://github.com/Vucko130/revanced-patches/commit/42ec0218d829ea15759f83562d24588ce97cb646))
+* link packages to Google PlayStore ([#1272](https://github.com/Vucko130/revanced-patches/issues/1272)) ([97892e0](https://github.com/Vucko130/revanced-patches/commit/97892e01044c74916375aeebcc094d3304e14f4e))
 
   
 **App Versions:**  
