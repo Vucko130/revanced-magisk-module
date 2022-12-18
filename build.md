@@ -1,11 +1,13 @@
-CLI: revanced-cli-2.18.1-all.jar  
+CLI: revanced-cli-2.18.2-all.jar  
 Integrations: app-release-unsigned-v0.84.0.apk  
-Patches: revanced-patches-2.144.0.jar  
+Patches: revanced-patches-2.145.0.jar  
 
-### [2.144.0](https://github.com/Vucko130/revanced-patches/compare/v2.143.0...v2.144.0) (2022-12-16)
+### [2.145.0](https://github.com/Vucko130/revanced-patches/compare/v2.144.0...v2.145.0) (2022-12-18)
+### Bug Fixes
+* **tiktok/settings:** make compatible with newer versions ([c88740d](https://github.com/Vucko130/revanced-patches/commit/c88740dc2bf040747d9704d5bed52a7b533c22d6))
 ### Features
-* **citra:** add compatibility for canary package ([#1256](https://github.com/Vucko130/revanced-patches/issues/1256)) ([42ec021](https://github.com/Vucko130/revanced-patches/commit/42ec0218d829ea15759f83562d24588ce97cb646))
-* link packages to Google PlayStore ([#1272](https://github.com/Vucko130/revanced-patches/issues/1272)) ([97892e0](https://github.com/Vucko130/revanced-patches/commit/97892e01044c74916375aeebcc094d3304e14f4e))
+* **crunchyroll:** remove `enable-downloads` patch ([2ac1546](https://github.com/Vucko130/revanced-patches/commit/2ac15460f5734fc2c6d2d78d34083a8e6b2f7012))
+* **youtube-music:** bump compatibility to 5.36.51 ([c4a3099](https://github.com/Vucko130/revanced-patches/commit/c4a3099c1ca39431fba9beb94cc2b43e260561d9))
 
   
 **App Versions:**  
