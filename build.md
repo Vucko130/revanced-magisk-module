@@ -10,8 +10,8 @@ Patches: revanced-patches-2.151.0.jar
 
   
 **App Versions:**  
-Twitter: 9.69.1-release.0  
 YouTube: 17.49.37  
+Twitter: 9.69.1-release.0  
 
 Install [Vanced Microg](https://github.com/inotia00/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
