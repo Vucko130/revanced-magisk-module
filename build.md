@@ -1,5 +1,5 @@
-Twitter: 9.96.0-release.0  
 YouTube: 18.23.35  
+Twitter: 9.96.0-release.0  
 TickTick: 6.6.5.0  
 Tasker: 6.1.33  
 
@@ -9,7 +9,7 @@ Install [Vanced Microg](https://github.com/inotia00/VancedMicroG/releases) for n
 
 ---
 Changelog:  
-CLI: j-hc/revanced-cli-2.22.0-all.jar  
+CLI: j-hc/revanced-cli-2.23.0-all.jar  
 Integrations: revanced/revanced-integrations-0.112.0.apk  
 Patches: revanced/revanced-patches-2.184.0.jar  
 
