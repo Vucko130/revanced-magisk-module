@@ -114,7 +114,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@bot_tribe_rvc"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -145,3 +145,13 @@ jobs:
           MSG=${MSG:0:9450}
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+
+      - name: Delete Older Releases
+        uses: dev-drprasad/delete-older-releases@v0.3.3
+        with:
+          repo: Vucko130/revanced-magisk-module # defaults to current repo
+          keep_latest: 4
+          delete_tags : true
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         
