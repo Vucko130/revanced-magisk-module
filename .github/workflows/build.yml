@@ -147,10 +147,10 @@ jobs:
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
 
       - name: Delete Older Releases
-        uses: dev-drprasad/delete-older-releases@v0.3.3
+        uses: dev-drprasad/delete-older-releases@v0.3.4
         with:
           repo: Vucko130/revanced-magisk-module # defaults to current repo
-          keep_latest: 4
+          keep_latest: 24
           delete_tags : true
         env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
