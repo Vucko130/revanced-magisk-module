@@ -107,6 +107,16 @@ jobs:
           file_pattern: build.md *-update.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
 
+      - name: Send Notification to Ntfy
+        if: always()
+        run: |
+          curl \
+            -u ${{ secrets.NTFY_CRED }} \
+            -H "Title: ReVanced Builder Status" \
+            -H "Content-Type: text/plain" \
+            -d $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}\nRelease: https://github.com/${{ github.repository }}/releases/latest' \
+            ${{ secrets.NTFY_URL }}
+      
       - name: Report to Telegram
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
@@ -149,7 +159,7 @@ jobs:
       - name: Delete Older Releases
         uses: dev-drprasad/delete-older-releases@v0.3.4
         with:
-          repo: Vucko130/revanced-magisk-module # defaults to current repo
+          repo: ${{ github.repository }}
           keep_latest: 24
           delete_tags : true
         env:
