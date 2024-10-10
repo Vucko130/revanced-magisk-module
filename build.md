@@ -1,5 +1,5 @@
-Music (arm-v7a): 7.22.51  
 Music (arm64-v8a): 7.22.51  
+Music (arm-v7a): 7.22.51  
 Twitter: 10.62.1-release.0  
 YouTube: 19.16.39  
 
