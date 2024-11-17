@@ -31,7 +31,7 @@ jobs:
           if git checkout origin/update build.md; then
             UPDATE_CFG=$(./build.sh config.toml --config-update)
             if [ "$UPDATE_CFG" ]; then
-              echo "$UPDATE_CFG" > config.json
+              echo "$UPDATE_CFG" > config.toml
             fi
           fi
 
@@ -45,7 +45,7 @@ jobs:
           echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
 
       - name: Build modules/APKs
-        run: if [ -f "config.json" ]; then ./build.sh config.json; else ./build.sh config.toml; fi
+        run: ./build.sh config.toml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
@@ -107,6 +107,16 @@ jobs:
           file_pattern: build.md *-update.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
 
+      - name: Send Notification to Ntfy
+        if: always()
+        run: |
+          curl \
+            -H "Authorization: Bearer ${{ secrets.NTFY_CRED }}" \
+            -H "Title: ReVanced Builder Status" \
+            -H "Content-Type: text/plain" \
+            -d $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status }}\nRelease: https://github.com/${{ github.repository }}/releases/latest' \
+            ${{ secrets.NTFY_URL }}
+      
       - name: Report to Telegram
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
@@ -114,7 +124,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@bot_tribe_rvc"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -145,3 +155,13 @@ jobs:
           MSG=${MSG:0:9450}
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+
+      - name: Delete Older Releases
+        uses: dev-drprasad/delete-older-releases@v0.3.4
+        with:
+          repo: ${{ github.repository }}
+          keep_latest: 60
+          delete_tags : true
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         
