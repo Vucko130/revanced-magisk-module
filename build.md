@@ -1,6 +1,7 @@
+GooglePhotos (arm64-v8a): 7.10.0.701775512  
 Music (arm64-v8a): 7.29.51  
 Music (arm-v7a): 7.29.51  
-Twitter: 10.68.1-release.0  
+Twitter: 10.70.0-release.0  
 YouTube: 19.46.42  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -9,4 +10,4 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [revanced-magisk-module](https://github.com/Vucko130/revanced-magisk-module)
   
 CLI: j-hc/revanced-cli-5.0.0-all.jar  
-Patches: ReVanced/patches-5.2.0.rvp    
+Patches: ReVanced/patches-5.2.1.rvp    
