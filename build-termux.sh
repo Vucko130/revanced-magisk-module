@@ -33,7 +33,7 @@ mkdir -p /sdcard/Download/revanced-magisk-module/
 
 if [ ! -d revanced-magisk-module ]; then
 	pr "Cloning revanced-magisk-module."
-	git clone https://github.com/j-hc/revanced-magisk-module --depth 1
+	git clone https://github.com/Vucko130/revanced-magisk-module --depth 1
 	cd revanced-magisk-module
 	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' config.toml
 	grep -q 'revanced-magisk-module' ~/.gitconfig 2>/dev/null \
@@ -48,7 +48,7 @@ else
 		cd ..
 		cp -f revanced-magisk-module/config.toml .
 		rm -rf revanced-magisk-module
-		git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
+		git clone https://github.com/Vucko130/revanced-magisk-module --recurse --depth 1
 		mv -f config.toml revanced-magisk-module/config.toml
 		cd revanced-magisk-module
 	fi
@@ -58,7 +58,7 @@ fi
 	|| cp config.toml ~/storage/downloads/revanced-magisk-module/config.toml
 
 if ask "Open rvmm-config-gen to generate a config?"; then
-	am start -a android.intent.action.VIEW -d https://j-hc.github.io/rvmm-config-gen/
+	am start -a android.intent.action.VIEW -d https://Vucko130.github.io/rvmm-config-gen/
 fi
 printf "\n"
 until
