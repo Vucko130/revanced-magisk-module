@@ -9,8 +9,8 @@ parallel-jobs = 1
 [YouTube]
 build-mode = "apk"
 excluded-patches = ""
-included-patches = "'Change header'"
-patcher-args = "-Oheader=premium*header"
+included-patches = ""
+patcher-args = -e 'Change header' -Oheader=premium*header"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
