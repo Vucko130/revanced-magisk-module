@@ -1,5 +1,4 @@
-GooglePhotos (arm64-v8a): 7.35.0.774533729  
-GooglePhotos (arm-v7a): 7.35.0.774533729  
+GooglePhotos (arm64-v8a): 7.35.0.778148202  
 Music (arm64-v8a): 8.05.51  
 Music (arm-v7a): 8.05.51  
 Spotify: 9.0.36.683  
@@ -11,5 +10,5 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [revanced-magisk-module](https://github.com/Vucko130/revanced-magisk-module)
   
 CLI: j-hc/revanced-cli-5.0.0-all.jar  
-Patches: ReVanced/patches-5.29.0.rvp  
-[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.29.0)  
+Patches: ReVanced/patches-5.30.0.rvp  
+[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.30.0)  
