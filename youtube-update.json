@@ -1,6 +1,6 @@
 {
-  "version": "v20.40.45 (patches 6.0.1.rvp)",
-  "versionCode": 249,
-  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/249/youtube-revanced-module-v20.40.45-all.zip",
+  "version": "v20.40.45 (patches 6.1.0.rvp)",
+  "versionCode": 250,
+  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/250/youtube-revanced-module-v20.40.45-all.zip",
   "changelog": "https://raw.githubusercontent.com/Vucko130/revanced-magisk-module/update/build.md"
 }
