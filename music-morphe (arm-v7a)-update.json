@@ -1,6 +1,6 @@
 {
-  "version": "v8.47.56 (patches 1.25.0.mpp)",
-  "versionCode": 257,
-  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/257/music-morphe-module-v8.47.56-arm-v7a.zip",
+  "version": "v8.47.56 (patches 1.26.0.mpp)",
+  "versionCode": 258,
+  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/258/music-morphe-module-v8.47.56-arm-v7a.zip",
   "changelog": "https://raw.githubusercontent.com/Vucko130/revanced-magisk-module/update/build.md"
 }
