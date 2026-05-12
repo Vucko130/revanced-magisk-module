@@ -1,6 +1,6 @@
 {
-  "version": "v11.81.0-release.0 (patches 3.2.0.mpp)",
-  "versionCode": 258,
-  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/258/twitter-piko-module-v11.81.0-release.0-all.zip",
+  "version": "v11.81.0-release.0 (patches 3.3.0.mpp)",
+  "versionCode": 259,
+  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/259/twitter-piko-module-v11.81.0-release.0-all.zip",
   "changelog": "https://raw.githubusercontent.com/Vucko130/revanced-magisk-module/update/build.md"
 }
