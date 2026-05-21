@@ -1,6 +1,6 @@
 {
-  "version": "v20.47.62 (patches 1.28.0.mpp)",
-  "versionCode": 260,
-  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/260/youtube-morphe-module-v20.47.62-all.zip",
+  "version": "v20.47.62 (patches 1.29.0.mpp)",
+  "versionCode": 262,
+  "zipUrl": "https://github.com/Vucko130/revanced-magisk-module/releases/download/262/youtube-morphe-module-v20.47.62-all.zip",
   "changelog": "https://raw.githubusercontent.com/Vucko130/revanced-magisk-module/update/build.md"
 }
